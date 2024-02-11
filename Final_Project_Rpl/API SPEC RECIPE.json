@@ -1,0 +1,68 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "API SPEC RECIPE",
+    "description": "FREE API USE FOR APPS RECIPE",
+    "version": "1.0.0",
+    "contact": {
+      "name": "Wizzi.GameDev",
+      "email": "freecodeadam@gmail.com",
+      "url": "https://wizzigamedev.github.io/"
+    }
+  },
+  "servers": [],
+  "paths": {
+    "/api/users/register" : {
+      "post": {
+        "summary": "Register User Apps",
+        "description": "Before login user must be register",
+        "requestBody": {
+          "description": "Register Required",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "Register",
+            "in": "query",
+            "required": true,
+            "description": "User register",
+            "schema": {
+              "type": "string",
+              "required": true,
+              "maxItems": 5
+            }
+          }
+        ],
+        "responses": {
+
+        }
+      }
+    },
+    "/api/users/login" : {
+      "post": {
+
+      }
+    },
+    "/api/users/current" : {
+      "get": {
+
+      }
+    },
+    "/api/users/logout" : {
+      "delete": {
+
+      }
+    }
+  },
+  "externalDocs": {
+    "description": "URL YouTube Ko Adam",
+    "url": "https://www.youtube.com/channel/UCDGnvex-FBBiBu-8hIUSmXA"
+  }
+}
